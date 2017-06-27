@@ -14,7 +14,10 @@ def cheese
 	 cheese = ["cheddar", "feta", "mozzarella", "gouda", "four cheese"]
 end
 
+count = 0
 5.times do
+p "pizza #{count+1}"
+count +=1
 	p size.sample
 	p crust.sample
 	p meat.sample
