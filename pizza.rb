@@ -13,10 +13,10 @@ end
 def cheese
 	 cheese = ["cheddar", "feta", "mozzarella", "gouda", "four cheese"]
 end
-p "How many pizzas would you like?"
+p "How many $10 pizzas would you like?"
 x = gets.chomp.to_i
-
 count = 0
+pizza_price = (10 *x)
 x.times do
 p "pizza #{count+1}"
 count +=1
@@ -26,3 +26,4 @@ count +=1
 	p cheese.sample
 	puts # placed an empty puts to add a space between each individual pizza, making it easier to read in PowerShell
 end
+puts "total cost is $#{pizza_price}."
