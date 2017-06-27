@@ -13,9 +13,11 @@ end
 def cheese
 	 cheese = ["cheddar", "feta", "mozzarella", "gouda", "four cheese"]
 end
+p "How many pizzas would you like?"
+x = gets.chomp.to_i
 
 count = 0
-5.times do
+x.times do
 p "pizza #{count+1}"
 count +=1
 	p size.sample
